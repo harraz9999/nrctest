@@ -1,0 +1,132 @@
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<h1>Scoring Sheet - NRC 2025 Primary Rookie</h1>
+
+<div class="missions-container">
+
+  <!-- M01 -->
+  <div class="mission">
+    <div class="title">M01 - Fuel the Rocket</div>
+    <div class="mission-content">
+    <div class="image-container">
+      </div>
+      <div class="points-container">
+        <div class="point-block toggle" data-points="10">10<br>Completely inside</div>
+        <div class="point-block toggle" data-points="5">5<br>Partly Inside</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- M02 -->
+  <div class="mission">
+    <div class="title">M02 - Launch The Rocket</div>
+    <div class="mission-content">
+      <div class="image-container">
+        <img src="https://drive.google.com/uc?export=view&id=10WTa67iBDPi_LgumzJxYeytKhS-GvpVo" alt="Mission Image" style="max-width:100%; height:auto; border-radius:6px;">
+
+      </div>
+      <div class="points-container">
+        <div class="point-block toggle" data-points="15">15<br>Beyond 2nd Red Marker</div>
+        <div class="point-block toggle" data-points="5">5<br>Beyond 1st Red Marker</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- M03 -->
+  <div class="mission">
+    <div class="title">M03 - Space Debris</div>
+    <div class="mission-content">
+      <div class="image-container">
+        <img src="images/m03.jpg" alt="Space Debris">
+      </div>
+      <div class="points-container">
+        <div class="point-block counter" data-points="10" data-max="3">
+          <div>Completely/Partly inside start area</div>
+          <div class="controls">
+            <button class="minus">-</button>
+            <span class="count">0</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- M04 -->
+  <div class="mission">
+    <div class="title">M04 - Satellites</div>
+    <div class="mission-content">
+      <div class="image-container">
+        <img src="images/m04.jpg" alt="Satellites">
+      </div>
+      <div class="points-container">
+        <div class="point-block counter" data-points="20" data-max="5">
+          <div>Completely Inside (Correct Colour)</div>
+          <div class="controls">
+            <button class="minus">-</button>
+            <span class="count">0</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- M05 -->
+  <div class="mission">
+    <div class="title">M05 - Astronauts</div>
+    <div class="mission-content">
+      <div class="image-container">
+        <img src="https://drive.google.com/thumbnail?id=1DG2Bp0AdsIGmfZRlD0fyCI86HgDuhJFv&sz=w800" alt="Mission Image">
+      </div>
+      <div class="points-container">
+        <div class="point-block counter" data-points="5" data-max="2">
+          <div>Astronauts Not Damaged and Not Touching Outside</div>
+          <div class="controls">
+            <button class="minus">-</button>
+            <span class="count">0</span>
+            <button class="plus">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- M06 -->
+  <div class="mission">
+    <div class="title">M06 - Barrier</div>
+    <div class="mission-content">
+      <div class="image-container">
+        <img src="https://drive.google.com/uc?export=view&id=16t6OkA0wL-2VI4QDHzj751RUUCVTnohd" alt="Mission Image">
+      </div>
+      <div class="points-container">
+        <div class="point-block toggle" data-points="10">10<br>Not Damaged & Not Touching Outside</div>
+      </div>
+    </div>
+  </div>
+
+</div> <!-- end .missions-container -->
+
+<div class="footer">
+  <!-- Total Score on the left -->
+  <div class="score">
+  Total Score: <span id="total" class="score-value">0</span> / 175
+</div>
+
+  <!-- Timer + Buttons on the right -->
+  <div class="controls-group">
+    <button onclick="resetScore()" aria-label="Reset Score">
+      <i class="fa fa-repeat" aria-hidden="true"></i>
+    </button>
+    <button onclick="startTimer()" aria-label="Start Timer">
+      <i class="fa fa-play" aria-hidden="true"></i>
+    </button>
+    <button onclick="stopTimer()" aria-label="Stop Timer">
+      <i class="fa fa-stop" aria-hidden="true"></i>
+    </button>
+    <div class="timer" id="timer">00:00</div>
+  </div>
+</div>
